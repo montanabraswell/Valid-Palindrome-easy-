@@ -1,0 +1,36 @@
+class Solution:
+  def isPalindrome(self, s: str) -> bool:
+    # TODO: Write your code here
+
+    string = list(s)  
+    index = 0
+    while index < (len(string)): (n)
+    #loop through each letter
+      print(index) (1)
+      character = string[index] (1)
+      if character.isalpha() == True : (1)
+       #print("Found character: "  + character)
+       string[index] = character.lower()(1)
+       index += 1 (1)
+       #string = string.character(character, character.lower())
+      else:
+        #print("Strange character detected")
+        string.pop(index) (1)
+        print(string)(1)
+      
+        
+    leftSide = 0 
+    rightSide = len(string)- 1
+
+    while rightSide > leftSide : 
+      print(string[leftSide])
+      print(string[rightSide])
+      if string[leftSide] != string[rightSide]: 
+        print("This is not a match : ")
+        
+        return False 
+      rightSide -= 1 
+      leftSide  += 1 
+
+
+    return True
